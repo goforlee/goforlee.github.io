@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Archive – Lee + Developer – blog by WoongHee Lee</title>
+  <title>[Clean Code] Chapter 2 - Meaningful Names – Lee + Developer – blog by WoongHee Lee</title>
 
       <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -11,14 +11,14 @@
     <meta name="keywords" content="programming, blog, java, python, jekyll, oracle, 자바, 파이썬, 지킬, 프로그래밍, 개발자, 블로그">
 
     
-    <meta name="description" content="" />
-    <meta property="og:description" content="" />
+    <meta name="description" content="이름 짓기의 중요성" />
+    <meta property="og:description" content="이름 짓기의 중요성" />
     
     <meta name="author" content="Lee + Developer" />
 
     
-    <meta property="og:title" content="Archive" />
-    <meta property="twitter:title" content="Archive" />
+    <meta property="og:title" content="[Clean Code] Chapter 2 - Meaningful Names" />
+    <meta property="twitter:title" content="[Clean Code] Chapter 2 - Meaningful Names" />
     
 
   <!-- Async font loading -->
@@ -83,76 +83,94 @@
 </div>
 
     <div id="main" role="main" class="container">
-      <article class="page">
+      <article class="post">
+  <h1>[Clean Code] Chapter 2 - Meaningful Names</h1>
+  <h2>이름 짓기의 중요성</h2>
+  <div clsss="meta">
+    <span class="date">
+      2020-09-01
+    </span>
 
-  <h1>Archive</h1>
+    <ul class="tag">
+      
+      <li>
+        <a href="http://0.0.0.0:4000/tags#책 [Book]">
+          책 [Book]
+        </a>
+      </li>
+      
+      <li>
+        <a href="http://0.0.0.0:4000/tags#클린코드 [CleanCode]">
+          클린코드 [CleanCode]
+        </a>
+      </li>
+      
+    </ul>
+  </div>
 
   <div class="entry">
-    
+    <hr />
+<p>아직 챕터 2까지 밖에 안읽었지만 벌써 눈이 번쩍 뜨인다. 그동안 별로 중요하다고 생각하지 않았던 것들이 갑자기 엄청나게 중요해보이고 코딩을 읽고 쓸 때 좀 더 깊이 고민하게 된다. 챕터 2까지 읽은 소감은 진작 읽을걸…</p>
 
-<ul class="archive">
-  
-    
-      <h2>2020</h2>
-    
+<hr />
 
-    <li>
-      
-      <a href="/%EC%B1%85-CleanCode_Chap2/">
-      
-        [Clean Code] Chapter 2 - Meaningful Names
-      </a>
-      <time>2020-09-01</time>
-    </li>
-  
-    
-      
-      
-      
-    
+<h2 id="이름-짓기에-온-힘을-다해라">이름 짓기에 온 힘을 다해라</h2>
 
-    <li>
-      
-      <a href="/%EC%B1%85-CleanCode_Chap1/">
-      
-        [Clean Code] Chapter 1 - Clean Code
-      </a>
-      <time>2020-08-30</time>
-    </li>
-  
-    
-      
-      
-      
-    
+<p>이름을 지을 때 그것이 변수든 함수든 그것의 목적이 나타나게 지으라는 말을 자주 듣는다. 이 책은 이에 대해 아주 심각하게 받아들이고 이름을 신중히 정하라고 말한다.</p>
 
-    <li>
-      
-      <a href="/%EC%B1%85-%EC%B2%AB%EB%B2%88%EC%A7%B8/">
-      
-        [책] 나도 이제 책을 좀 읽어야지
-      </a>
-      <time>2020-08-27</time>
-    </li>
-  
-    
-      
-      
-      
-    
+<p>첫 페이지에서부터 좋은 이름을 지었을 때의 예시를 보여주는데 신선하게 충격을 받았다. 이 챕터는 계속해서 어떻게 하면 이름을 잘 지을 수 있는 지를 알려준다.</p>
 
-    <li>
-      
-      <a href="/Go-Lang/">
-      
-        [GO] Go Lang?
-      </a>
-      <time>2020-07-24</time>
-    </li>
-  
-</ul>
+<ol>
+  <li>뜻이 안보이는 이름은 피해라  ex) hp, aix, sco …</li>
+  <li>컴파일러가 만족하는 코딩을 하지 말고 자신을 위한 코딩을 써라 ex) 변수 뒤에 1,2 붙이는 나쁜 행동</li>
+  <li>noise word를 피해라 ex)Productinfo - ProductData 차이가 뭐야?</li>
+  <li>자신이 발음을 할 수 있는 이름을 지어줘라</li>
+  <li>찾기 쉬운 이름을 지어줘라</li>
+  <li>prefix는 정말 필요할 때만 특히 그룹 변수나 메소드를 표현할 때 좋다.</li>
+  <li>통일성을 찾아라</li>
+</ol>
+
+<p>마지막으로 좋은 quote</p>
+
+<blockquote>
+  <p>Clariry is king</p>
+</blockquote>
+
+<hr />
+<p>막상 적고 보니 별거 없지만 챕터 3을 읽으면서도 느끼는 건 이름 짓기는 정말 중요하다. 대충 넘어갈 수 있는 부분을 처음부터 짚어줘서 정말 좋았다. 특히 나처럼 유지 보수를 하는 일에는 이름만큼 중요한게 없다. 왜냐면 사용자는 계속해서 무언가를 요구하고 나는 계속해서 사용자의 편의를 위해 남이 짠 코드를 읽고 수정하고 때로는 다른 개발자도 보기 쉽게 코드를 새로 짜야 하기 때문이다.</p>
+
+<p>개발자+작명가가 되어야 한다. <code class="language-plaintext highlighter-rouge">개발명가</code></p>
 
   </div>
+
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="http://0.0.0.0:4000/%EC%B1%85-CleanCode_Chap1/">
+            &#xE000; [Clean Code] Chapter 1 - Clean Code
+          </a>
+      </span>
+    
+    
+  </div>
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'reidhock';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
 </article>
 
     </div>
@@ -217,8 +235,8 @@
 
 		ga('create', 'UA-106768275-3', 'auto');
 		ga('send', 'pageview', {
-		  'page': '/archive/',
-		  'title': 'Archive'
+		  'page': '/%EC%B1%85-CleanCode_Chap2/',
+		  'title': '[Clean Code] Chapter 2 - Meaningful Names'
 		});
 	</script>
 	<!-- End Google Analytics -->
