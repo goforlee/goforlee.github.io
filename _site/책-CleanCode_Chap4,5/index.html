@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>[Clean Code] Chapter 2 - Meaningful Names – Lee + Developer – blog by WoongHee Lee</title>
+  <title>[Clean Code] Chapter 4&5 - Comments & Formatting – Lee + Developer – blog by WoongHee Lee</title>
 
       <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -11,14 +11,14 @@
     <meta name="keywords" content="programming, blog, java, python, jekyll, oracle, 자바, 파이썬, 지킬, 프로그래밍, 개발자, 블로그">
 
     
-    <meta name="description" content="이름 짓기의 중요성" />
-    <meta property="og:description" content="이름 짓기의 중요성" />
+    <meta name="description" content="주석 달지마!" />
+    <meta property="og:description" content="주석 달지마!" />
     
     <meta name="author" content="Lee + Developer" />
 
     
-    <meta property="og:title" content="[Clean Code] Chapter 2 - Meaningful Names" />
-    <meta property="twitter:title" content="[Clean Code] Chapter 2 - Meaningful Names" />
+    <meta property="og:title" content="[Clean Code] Chapter 4&5 - Comments & Formatting" />
+    <meta property="twitter:title" content="[Clean Code] Chapter 4&5 - Comments & Formatting" />
     
 
   <!-- Async font loading -->
@@ -84,11 +84,11 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>[Clean Code] Chapter 2 - Meaningful Names</h1>
-  <h2>이름 짓기의 중요성</h2>
+  <h1>[Clean Code] Chapter 4&5 - Comments & Formatting</h1>
+  <h2>주석 달지마!</h2>
   <div clsss="meta">
     <span class="date">
-      2020-09-01
+      2020-09-17
     </span>
 
     <ul class="tag">
@@ -110,53 +110,43 @@
 
   <div class="entry">
     <hr />
-<p>아직 챕터 2까지 밖에 안읽었지만 벌써 눈이 번쩍 뜨인다. 그동안 별로 중요하다고 생각하지 않았던 것들이 갑자기 엄청나게 중요해보이고 코딩을 읽고 쓸 때 좀 더 깊이 고민하게 된다. 챕터 2까지 읽은 소감은 진작 읽을걸…</p>
+<p>나의 전형적인 문제가 나온다. 처음에는 아주 엄청난 의욕으로 시작하다가 슬슬 귀찮아지고 점점 안하는 나의 모습. 어느정도 예상은 했지만 이렇게 빨리?? ㅋㅋ 그렇다고 그동안 책을 안읽은 것은 아니다. 읽긴 했는데 포스팅이 급 귀찮… 진지하게 블로그 글을 100개 이상 꾸준히 쓰시는 분들은 대단한 사람들이시다. 리스펙.</p>
 
-<hr />
+<p>아무튼 오늘은 챕터4,5를 한꺼번에 포스팅 하겠다.(절대 귀찮은거아님) 내용도 별로 없고 이를 포스팅 두개로 나누기에는 조금 애매해서 이렇게 정했다.
+***</p>
 
-<h2 id="이름-짓기에-온-힘을-다해라">이름 짓기에 온 힘을 다해라</h2>
+<h2 id="chatper-4-comments">Chatper 4 Comments</h2>
+<p>챕터4장에서는 하나만 기억하면 된다. 코멘트 쓰지마! 개발자는 코드로 대화를 나누는 사람이지 주석으로 대화를 나누는 사람이 아니다. 끝. 하고 끝내면 좋겠지만 좀 더 알아야할 내용이 있다. 지금 아니면 주석에 대해서 언제 배우겠나? 지금 잘 배워놓고 두번 다시 주석에 대해 배우지말자 ㅋ</p>
 
-<p>이름을 지을 때 그것이 변수든 함수든 그것의 목적이 나타나게 지으라는 말을 자주 듣는다. 이 책은 이에 대해 아주 심각하게 받아들이고 이름을 신중히 정하라고 말한다.</p>
-
-<p>첫 페이지에서부터 좋은 이름을 지었을 때의 예시를 보여주는데 신선하게 충격을 받았다. 이 챕터는 계속해서 어떻게 하면 이름을 잘 지을 수 있는 지를 알려준다.</p>
-
+<p>굳이 코멘트를 써야한다면 몇가지 상황들을 고려해볼 수 있다.</p>
 <ol>
-  <li>뜻이 안보이는 이름은 피해라  ex) hp, aix, sco …</li>
-  <li>컴파일러가 만족하는 코딩을 하지 말고 자신을 위한 코딩을 써라 ex) 변수 뒤에 1,2 붙이는 나쁜 행동</li>
-  <li>noise word를 피해라 ex)Productinfo - ProductData 차이가 뭐야?</li>
-  <li>자신이 발음을 할 수 있는 이름을 지어줘라</li>
-  <li>찾기 쉬운 이름을 지어줘라</li>
-  <li>prefix는 정말 필요할 때만 특히 그룹 변수나 메소드를 표현할 때 좋다.</li>
-  <li>통일성을 찾아라</li>
+  <li>코드에 대해 왜 그렇게 코드를 짜야만 했는지 또는 무엇을 의도했는지를 적을 때</li>
+  <li>가끔은 의미가 애매한 매개변수 또는 리턴값에 대해서 적을 때</li>
+  <li>특정 부분의 코드를 강조하고 싶을 때</li>
 </ol>
 
-<p>마지막으로 좋은 quote</p>
+<p>코멘트를 쓸 때 주의할 점</p>
+<ol>
+  <li>뜻이 명확히 전달되도록 해라. 귀찮다고 대충 적지말고 의도하는 바를 짧고 명확하게 밝혀야 한다.</li>
+  <li>반복되는 내용을 쓰지마라. 코드에 이미 정확히 명시가 되어있는임에도 불구하고 주석을 또 다는 것은 바보다</li>
+  <li>로그성 코멘트. 과거에는 필요했을지 모르나 오늘날에는 형상관리가 아주 잘 되어있기 때문에 굳이 수정할 때마다 로그를 달 필요는 없다.</li>
+  <li>당연한거지만 쓸데없는 주석은 다 지워라.</li>
+  <li>위치를 알려주는 주석 예를들면 /////////function////////////////// 이런 짓은 하지마라</li>
+  <li>너무 많은 정보를 담은 주석. 이럴거면 그냥 문서를 하나 만들어서 공용문서로 만들어라.</li>
+</ol>
 
-<blockquote>
-  <p>Clariry is king</p>
-</blockquote>
-
-<hr />
-<p>막상 적고 보니 별거 없지만 챕터 2를 읽으면서도 느끼는 건 이름 짓기는 정말 중요하다. 대충 넘어갈 수 있는 부분을 처음부터 짚어줘서 정말 좋았다. 특히 나처럼 유지 보수를 하는 일에는 이름만큼 중요한게 없다. 왜냐면 사용자는 계속해서 무언가를 요구하고 나는 계속해서 사용자의 편의를 위해 남이 짠 코드를 읽고 수정하고 때로는 다른 개발자도 보기 쉽게 코드를 새로 짜야 하기 때문이다.</p>
-
-<p>개발자+작명가가 되어야 한다. <code class="language-plaintext highlighter-rouge">개발명가</code></p>
+<h2 id="chapter-5-formatting">Chapter 5 Formatting</h2>
 
   </div>
 
   <div class="pagination">
     
       <span class="prev" >
-          <a href="http://0.0.0.0:4000/%EC%B1%85-CleanCode_Chap1/">
-            &#xE000; [Clean Code] Chapter 1 - Clean Code
-          </a>
-      </span>
-    
-    
-      <span class="next" >
           <a href="http://0.0.0.0:4000/%EC%B1%85-CleanCode_Chap3/">
-            [Clean Code] Chapter 3 - Functions &#xE001;
+            &#xE000; [Clean Code] Chapter 3 - Functions
           </a>
       </span>
+    
     
   </div>
 
@@ -241,8 +231,8 @@
 
 		ga('create', 'UA-106768275-3', 'auto');
 		ga('send', 'pageview', {
-		  'page': '/%EC%B1%85-CleanCode_Chap2/',
-		  'title': '[Clean Code] Chapter 2 - Meaningful Names'
+		  'page': '/%EC%B1%85-CleanCode_Chap4,5/',
+		  'title': '[Clean Code] Chapter 4&5 - Comments & Formatting'
 		});
 	</script>
 	<!-- End Google Analytics -->

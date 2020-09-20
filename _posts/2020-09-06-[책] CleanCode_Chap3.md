@@ -51,4 +51,4 @@ Robert는 자신이 처음 코드를 작성할 때는 소스들이 길고 복잡
 아주 훌륭한 quote다 
 > "The art of programming is, and has always been, the art of language design."
 
-프로그래밍 마스터는 훌륭한 스토리텔러다. 프로그래머는 코드를 통해서 자신이 하고자 하는 일을 잘 표현할 수 있어야 한다. 
+프로그래밍 마스터는 훌륭한 스토리텔러다. 프로그래머는 코드를 통해서 자신이 하고자 하는 일을 잘 표현할 수 있어야 한다. ㅜ  

@@ -17,6 +17,14 @@
 <lastmod>2020-09-01T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://0.0.0.0:4000/%EC%B1%85-CleanCode_Chap3/</loc>
+<lastmod>2020-09-06T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/%EC%B1%85-CleanCode_Chap4,5/</loc>
+<lastmod>2020-09-17T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://0.0.0.0:4000/404/</loc>
 </url>
 <url>
@@ -30,5 +38,8 @@
 </url>
 <url>
 <loc>http://0.0.0.0:4000/archive/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/page2/</loc>
 </url>
 </urlset>
